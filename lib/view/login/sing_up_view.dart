@@ -150,7 +150,6 @@ class _SignUpViewState extends State<SignUpView> {
     );
   }
 
-  //TODO: Action
   void btnSignUp() {
 
     if (txtName.text.isEmpty) {
@@ -197,7 +196,6 @@ class _SignUpViewState extends State<SignUpView> {
     });
   }
 
-  //TODO: ServiceCall
 
   void serviceCallSignUp(Map<String, dynamic> parameter) {
     Globs.showHUD();

@@ -107,6 +107,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                               color: TColor.primary,
                                             ),
                                             onRatingUpdate: (rating) {
+                                              // ignore: avoid_print
                                               print(rating);
                                             },
                                           ),

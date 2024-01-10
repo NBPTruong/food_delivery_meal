@@ -15,6 +15,7 @@ class ChangeAddressView extends StatefulWidget {
 }
 
 class _ChangeAddressViewState extends State<ChangeAddressView> {
+  // ignore: unused_field
   GoogleMapController? _controller;
 
   final locations = const [
@@ -86,6 +87,7 @@ class _ChangeAddressViewState extends State<ChangeAddressView> {
             mapType: MapType.normal,
             initialCameraPosition: _kLake,
             compassEnabled: false,
+            // ignore: prefer_collection_literals
             gestureRecognizers: Set()
               ..add(Factory<PanGestureRecognizer>(
                 () => PanGestureRecognizer(),

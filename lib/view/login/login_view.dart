@@ -24,6 +24,7 @@ class _LoginViewState extends State<LoginView> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     var media = MediaQuery.of(context).size;
 
     return Scaffold(
@@ -162,7 +163,6 @@ class _LoginViewState extends State<LoginView> {
     );
   }
 
-  //TODO: Action
   void btnLogin() {
     if (!txtEmail.text.isEmail) {
       mdShowAlert(Globs.appName, MSG.enterEmail, () {});
@@ -179,7 +179,6 @@ class _LoginViewState extends State<LoginView> {
     serviceCallLogin({"email": txtEmail.text, "password": txtPassword.text, "push_token": "" });
   }
 
-  //TODO: ServiceCall
 
   void serviceCallLogin(Map<String, dynamic> parameter) {
     Globs.showHUD();
